@@ -14,6 +14,7 @@ import { ThemeContext } from './_layout';
 import { initializeFirebase } from '../firebase-config.js';
 import { getDoc, doc } from 'firebase/firestore';
 import Avatar from '../components/Avatar';
+import BottomNav from '../components/BottomNav';
 import { DEFAULT_PHOTO } from '../utils/imgdb';
 
 export default function ProfileScreen() {
@@ -175,6 +176,7 @@ export default function ProfileScreen() {
             </View>
           </View>
         </ScrollView>
+        <BottomNav />
       </SafeAreaView>
     </>
   );

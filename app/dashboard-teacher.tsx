@@ -1,5 +1,6 @@
 import React, { useContext, useState, useEffect } from 'react';
 import Avatar from '../components/Avatar';
+import BottomNav from '../components/BottomNav';
 import { useRouter } from 'expo-router';
 import { SafeAreaView, FlatList, StyleSheet, Text, TextInput, TouchableOpacity, View, Alert } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -257,6 +258,7 @@ const [userName, setUserName] = useState<string>('--');
           }
         />
       )}
+      <BottomNav />
     </SafeAreaView>
   );
 }
